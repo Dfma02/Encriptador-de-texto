@@ -72,20 +72,14 @@ return desencriptada;
 
 
 function btnCopiar(){
-    // Seleccionamos el elemento que contiene el texto encriptado (en este caso, asumimos que es el elemento con la clase "mensaje")
     const elemento = document.querySelector('.mensaje');
-    // Creamos un nuevo elemento temporal para almacenar el texto
     const tempElement = document.createElement('textarea');
-    // Agregamos el texto encriptado al elemento temporal
+   
     tempElement.value = elemento.value;
-    // Agregamos el elemento temporal al documento (pero fuera de la vista)
     document.body.appendChild(tempElement);
-    // Seleccionamos todo el texto del elemento temporal
     tempElement.select();
-    tempElement.setSelectionRange(0, 99999); // Para seleccionar todo el texto
-    // Copiamos el texto al portapapeles
+    tempElement.setSelectionRange(0, 99999); 
     document.execCommand('copy');
-    // Eliminamos el elemento temporal
     document.body.removeChild(tempElement);
   
     mensaje.value = "";
