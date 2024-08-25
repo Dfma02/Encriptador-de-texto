@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    
+</head>
+    <body>
+        <header>
+            <img class="logo" src="Imagenes/Logo.png" alt="logo de alura" >
+        </header>
+        <main>
+                <section>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 class="informacion"> <img class="signo"   src="/Imagenes/Vector.png" alt="signo de exclamacion">   
+                    Solo letras minúsculas y sin acentos. </h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-Encriptar" onclick ="btnEncriptar()">Encriptador</button>
+                    <button class="btn-Desencriptar" onclick="btnDesencriptar()">Desencriptador</button>
+                </div>
+                </section>
+
+                <section>
+                    <textarea class="mensaje" cols="20" rows="10"></textarea>
+                    <div>
+                         <button class="copiar" onclick="btnCopiar()"> Copiar </button>
+                    </div>    
+                </section>
+
+                <section>
+                    <div class="hidden"> 
+                        <button class="texto-info" >Ningún mensaje fue encontrado.</button>
+                    </div>
+                </section>
+                <section>
+                        <div class="hidden2">
+                        <button class="texto-info-2">Ingresa el texto que desees encriptar o desencriptar.</button>
+                    </div>
+                </section>
+        </main>
+    <script src="/script.js "></script>
+    </body>
+<footer class="signature"> 
+        <p class="signature-2">Desarrollado por <strong class="nombre"> Dfma02</strong></p>
+</footer>
+</html>
