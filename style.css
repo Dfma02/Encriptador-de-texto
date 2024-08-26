@@ -275,7 +275,7 @@ main{
         transform: translateX(-50%);
         }
     }
-@media (max-width:375px){
+@media (max-width:800px){
         .mensaje {
             position: absolute;
             top: 780px;
